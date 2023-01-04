@@ -811,7 +811,7 @@ border-color: var(--accent-color);
 }
 
 /*main portfolio*/
-.list-images {
+.cards {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -821,7 +821,7 @@ border-color: var(--accent-color);
   margin-right: -30px;
 }
 
-.comand-items {
+.cards-content {
   margin-top: 0;
   border-left: 1px solid var(--border-photos);
   border-right: 1px solid var(--border-photos);
@@ -830,32 +830,32 @@ border-color: var(--accent-color);
   margin-top: 0;
 }
 
-.photos-element {
+.portfolio__photos{
   display: block;
 }
 
-.images{
+.cards__images{
   display: block;
   text-decoration: none;
 }
 
-.images:hover,
-.images:focus{
+.cards__images:hover,
+.cards__images:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.images-element {
+.cards-element {
   width: 370px;
   margin-bottom: 30px;
   margin-right: 30px;
 }
 
-.images-element :nth-child(3n + 1) {
+.cards-element :nth-child(3n + 1) {
   margin-right: 0;
 }
 
 
-.items {
+.cards-content__title {
   margin-top: 0;
   margin-bottom: 4px;
   color: var(--title-color);
@@ -865,7 +865,7 @@ border-color: var(--accent-color);
   letter-spacing: 0.06em;
 }
 
-.items-element {
+.cards-content__subtitle{
   margin: 0;
   color: var(--text-color);
   font-weight: 400;
@@ -892,12 +892,12 @@ border-color: var(--accent-color);
 }
 
 
-.portfolio-thumb{
+.portfolio{
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-overlay{
+.portfolio__overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -909,13 +909,13 @@ border-color: var(--accent-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-.images:hover .portfolio-overlay,
-.images:focus .portfolio-overlay{
+.cards__images:hover .portfolio__overlay,
+.cards__images:focus .portfolio__overlay{
   transform: translateY(0)
 }
 
 
-.text-portfolio{
+.portfolio__text{
   position:absolute;
   color: var(--color-text-thumb);
   padding: 63px 24px;
@@ -931,8 +931,8 @@ border-color: var(--accent-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-.images:hover .text-portfolio,
-.images:focus .text-portfolio{
+.cards__images:hover .portfolio__text,
+.cards__images:focus .portfolio__text{
   transform: translateY(0);
 }
 
@@ -1043,7 +1043,7 @@ border-color: var(--accent-color);
 
 .social-icon__item :hover,
 .social-icon__item :focus{
-background-color: var(--accent-color);
+/* background-color: var(--accent-color); */
 }
 
 .social-icon__link{
