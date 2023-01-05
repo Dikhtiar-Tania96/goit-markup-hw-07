@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stydio</title>
     <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+    />
+    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
     />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet"
-    />
    
-    <link rel="stylesheet" href="./css/styles.css" />
+   
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.css">
   </head>
   <body class="body">
     <header class="header">
@@ -69,10 +71,10 @@
       <section class="features">
         <div class="container">
           <h2 class="features__title">Наші особливості</h2>
-          <ul class="list">
-            <li class="item-head">
-              <div class="icon-hidden">
-                <svg class="icon" width="70" height="70">
+          <ul class="images-block">
+            <li class="images-block__icon">
+              <div class="icon-block">
+                <svg class="icon-block__element" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>  
                 </svg>
               </div>
@@ -82,9 +84,9 @@
                 формування позиції.
               </p>
             </li>
-            <li class="item-head">
-              <div class="icon-hidden">
-                <svg class="icon" width="70" height="70">
+            <li class="images-block__icon">
+              <div class="icon-block">
+                <svg class="icon-block__element" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>  
                 </svg>
               </div>
@@ -94,9 +96,9 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="item-head">
-              <div class="icon-hidden">
-                <svg class="icon" width="70" height="70">
+            <li class="images-block__icon">
+              <div class="icon-block">
+                <svg class="icon-block__element" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>  
                 </svg>
               </div>
@@ -105,9 +107,9 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item-head">
-              <div class="icon-hidden">
-                <svg class="icon" width="70" height="70">
+            <li class="images-block__icon">
+              <div class="icon-block">
+                <svg class="icon-block__element" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>  
                 </svg>
               </div>
@@ -124,8 +126,8 @@
       <section class="activity">
         <div class="container">
           <h2 class="activity__title">Чим ми займаємося</h2>
-          <ul class="list">
-            <li class="photo">
+          <ul class="activity-list">
+            <li class="activity-list__photo">
               <div class="photo-thumb">
               <img
                 class="img-photo"
@@ -134,11 +136,11 @@
                 width="370"
               />
               <div class="photo-overlay">
-              <p class="text-thumb">Десктопні додатки</p>
+              <p class="photo-overlay__text">Десктопні додатки</p>
               </div>
             </div>
             </li>
-            <li class="photo">
+            <li class="activity-list__photo">
               <div class="photo-thumb">
               <img
                 class="img-photo"
@@ -147,11 +149,11 @@
                 width="370"
               />
               <div class="photo-overlay">
-              <p class="text-thumb">Мобільні додатки</p>
+              <p class="photo-overlay__text">Мобільні додатки</p>
               </div>
             </div>
             </li>
-            <li class="photo">
+            <li class="activity-list__photo">
               <div class="photo-thumb">
               <img
                 class="img-photo"
@@ -160,7 +162,7 @@
                 width="370"
               />
               <div class="photo-overlay">
-              <p class="text-thumb">Дизайнерські рішення</p>
+              <p class="photo-overlay__text">Дизайнерські рішення</p>
               </div>
             </div>
             </li>
@@ -171,7 +173,7 @@
       <section class="comand">
         <div class="container">
           <h2 class="comand__title">Наша команда</h2>
-          <ul class="list">
+          <ul class="activity-list">
             <li class="photos-block">
               <img
                 src="./images/igor.jpg"
