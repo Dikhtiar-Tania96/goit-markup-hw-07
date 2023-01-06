@@ -1,6 +1,7 @@
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--white-color);
 
     &__title {
         position: absolute;
@@ -17,6 +18,7 @@
   }
 
 .images-block{
+    display: inline-flex;
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
