@@ -545,9 +545,6 @@
   height: 44px;
   list-style: none;
 }
-.social-icon__item :hover, .social-icon__item :focus {
-  background-color: var(--accent-color);
-}
 
 .social-icon__link {
   display: -webkit-box;
@@ -570,6 +567,7 @@
 }
 .social-icon__link:hover, .social-icon__link:focus {
   fill: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .client {
